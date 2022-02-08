@@ -51,8 +51,8 @@ const cardDistribution = usersInfo => {
 			addToCard(generatedCard, cardNumber, user.priority);
 		} else if (cardNumber.length < 16) {
 			const needZero = 16 - cardNumber.length;
-			let zero = "0";
-			for (let i = 0; i < needZero - 1; i++) {
+			let zero = "";
+			for (let i = 0; i < needZero; i++) {
 				zero += "0";
 			}
 			cardNumber = fixedNumber + zero + userNo;
